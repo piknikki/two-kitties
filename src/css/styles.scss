@@ -52,6 +52,10 @@ body {
 
   &__item {
     padding: 10px;
+
+    &--text {
+      padding: 0 2px;
+    }
   }
 }
 
@@ -76,24 +80,30 @@ body {
 
 // *** Main ***
 main {
-margin: 20px;
+  margin: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }
 
 .content-title {
-  margin: 20px;
-  font-size: 1.4em;
+  margin: 30px;
+  font-size: 2em;
   font-weight: 600;
+
+  &__icon {
+    display: none;
+  }
 }
 
 // *** Card ***
 
 .card {
   width: 260px;
-  height: 375px;
   display: flex;
   flex-flow: column nowrap;
   box-shadow: 0 0 10px grey;
-
+  margin: 10px;
 }
 
 .card-header {
@@ -113,7 +123,7 @@ margin: 20px;
       background: black;
       width: 260px;
       height: 155px;
-      opacity: 0.3;
+      opacity: 0.4;
     }
 
     &--arrow-overlay {
@@ -163,7 +173,7 @@ margin: 20px;
 }
 
 .card-body {
-  padding: 10px;
+  padding: 10px 10px 15px;
 
   &__item {
 
@@ -175,27 +185,107 @@ margin: 20px;
     &--date {
       font-size: .8em;
       font-weight: lighter;
+      padding-left: 5px;
     }
 
     &--link {
-      margin: 10px;
-      background: #CACACA;
-      font-size: 0.8em;
-      padding: 5px;
+      margin: 15px 10px;
+      background: #e0dede;
+      font-size: 0.7em;
+      padding: 7px;
       text-wrap: normal;
+      overflow-wrap: break-word;
+    }
+
+    &--playlist {
+      padding: 5px;
+      font-size: 0.6em;
+    }
+
+    &--playlist-name {
+      padding-left: 5px;
+      padding-bottom: 5px;
+    }
+
+    &--attachments {
+      padding: 10px 5px 5px;
+      font-size: 0.6em;
+    }
+
+    &--attach-number {
+      padding-left: 5px;
+      font-size: 2em;
+      color: $link-color;
     }
   }
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1112px) {
+  .nav-left {
+    padding-left: 20px;
+    width: 75%;
 
+    &__item {
+      padding: 5px;
+
+    }
+  }
+
+  .nav-right {
+    width: 25%;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 734px) {
+  .nav-left {
+    &__item {
+      display: flex;
+      flex-direction: column;
 
+      &--text {
+        padding: 5px;
+      }
+    }
+  }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 610px) {
+  .login-name {
+    display: none;
+  }
 
+  .nav-left {
+    &__item {
+
+      &--text {
+        display: none;
+      }
+    }
+  }
+
+  .content-title {
+    &__icon {
+      display: inline;
+    }
+
+    &__text {
+      display: none;
+    }
+  }
 }
+
+@media screen and (max-width: 400px) {
+  .title {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  html,
+  body,
+  .container {
+    width: 100%;
+  }
+}
+
