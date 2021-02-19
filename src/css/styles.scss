@@ -6,11 +6,30 @@
 /*blue color for links maybe and numbers */
 
 $font-stack: 'Brygada 1918', serif;
-$font-other: 'Poppins', sans-serif;
+$font-other: 'Montserrat', sans-serif;
 
 body {
   background: #EFEFEF;
   font-family: $font-other;
+}
+
+
+.container {
+  margin: 0 auto;
+}
+
+.login {
+  background: #2B2B2B;
+  color: white;
+  font-weight: 400;
+  width: 100%;
+  height: 100px;
+  text-align: right;
+  padding: 20px;
+}
+
+.fa-play {
+  color: cornflowerblue;
 }
 
 .card-body {

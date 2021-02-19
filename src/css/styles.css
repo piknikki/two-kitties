@@ -5,7 +5,25 @@
 /*blue color for links maybe and numbers */
 body {
   background: #EFEFEF;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.login {
+  background: #2B2B2B;
+  color: white;
+  font-weight: 400;
+  width: 100%;
+  height: 100px;
+  text-align: right;
+  padding: 20px;
+}
+
+.fa-play {
+  color: cornflowerblue;
 }
 
 .card-body__item--name {
