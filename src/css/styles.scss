@@ -106,10 +106,41 @@ main {
   margin: 10px;
 }
 
-.card-header {
+#cat1.card-header {
   background-image: url("../images/cat1.png");
+}
+
+#cat2.card-header {
+  background-image: url("../images/cat10.png");
+}
+
+#cat3.card-header {
+  background-image: url("../images/cat3.png");
+}
+
+#cat4.card-header {
+  background-image: url("../images/cat4.png");
+}
+
+#cat5.card-header {
+  background-image: url("../images/cat5.png");
+}
+
+#cat6.card-header {
+  background-image: url("../images/cat6.png");
+}
+
+#cat7.card-header {
+  background-image: url("../images/cat7.png");
+}
+
+#cat8.card-header {
+  background-image: url("../images/cat8.png");
+}
+
+.card-header {
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 
