@@ -45,6 +45,9 @@ body {
 .nav-left__item {
   padding: 10px;
 }
+.nav-left__item--text {
+  padding: 0 2px;
+}
 
 .nav-right {
   padding-right: 50px;
@@ -65,14 +68,71 @@ body {
   margin-left: 10px;
 }
 
-.content-title {
+main {
   margin: 20px;
-  font-size: 1.4em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.content-title {
+  margin: 30px;
+  font-size: 2em;
   font-weight: 600;
+}
+.content-title__icon {
+  display: none;
 }
 
 .card {
+  width: 260px;
   display: flex;
+  flex-flow: column nowrap;
+  box-shadow: 0 0 10px grey;
+  margin: 10px;
+}
+
+.card-header {
+  background-image: url("../images/cat1.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.card-header__item--overlay {
+  background: black;
+  width: 260px;
+  height: 155px;
+  opacity: 0.4;
+}
+.card-header__item--arrow-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 260px;
+  height: 155px;
+  color: white;
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+
+.overlay__item--para {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+.overlay__item--para-top {
+  font-size: 0.8em;
+  text-align: center;
+}
+.overlay__item--para-bottom {
+  font-size: 2.2em;
+  text-align: center;
+}
+
+.image {
+  width: 260px;
 }
 
 .fa-circle {
@@ -83,16 +143,93 @@ body {
   color: #2B2B2B;
 }
 
+.card-body {
+  padding: 10px 10px 15px;
+}
 .card-body__item--name {
   font-size: 1em;
+  padding: 5px;
 }
 .card-body__item--date {
   font-size: 0.8em;
   font-weight: lighter;
+  padding-left: 5px;
 }
 .card-body__item--link {
-  margin: 10px;
-  background: #CACACA;
+  margin: 15px 10px;
+  background: #e0dede;
+  font-size: 0.7em;
+  padding: 7px;
+  text-wrap: normal;
+  overflow-wrap: break-word;
+}
+.card-body__item--playlist {
+  padding: 5px;
+  font-size: 0.6em;
+}
+.card-body__item--playlist-name {
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+.card-body__item--attachments {
+  padding: 10px 5px 5px;
+  font-size: 0.6em;
+}
+.card-body__item--attach-number {
+  padding-left: 5px;
+  font-size: 2em;
+  color: #4686ee;
+}
+
+@media screen and (max-width: 1112px) {
+  .nav-left {
+    padding-left: 20px;
+    width: 75%;
+  }
+  .nav-left__item {
+    padding: 5px;
+  }
+
+  .nav-right {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 734px) {
+  .nav-left__item {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-left__item--text {
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .login-name {
+    display: none;
+  }
+
+  .nav-left__item--text {
+    display: none;
+  }
+
+  .content-title__icon {
+    display: inline;
+  }
+  .content-title__text {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .title {
+    display: none;
+  }
+}
+@media screen and (max-width: 300px) {
+  html,
+body,
+.container {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
