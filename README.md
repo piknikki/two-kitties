@@ -12,5 +12,5 @@ and hopefully fairly accessible.
   - ![TwoKitties](src/images/mobile.png)
 
 
-### See more here
+### See more of my work here
 [Nikki Petersen](http://nikkipetersen.dev)
