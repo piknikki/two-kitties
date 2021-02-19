@@ -29,7 +29,7 @@ body {
   color: $link-color;
 }
 
-.fal {
+.icon {
   margin: 0 10px;
 }
 
@@ -65,7 +65,8 @@ body {
 
 .title {
   font-family: $font-stack;
-  font-size: 1.2em;
+  font-size: 1.6em;
+  font-weight: 700;
 }
 
 .logo {
@@ -73,8 +74,23 @@ body {
   margin-left: 10px;
 }
 
+// *** Main ***
+main {
+
+}
+
+.content-title {
+  margin: 20px;
+  font-size: 1.4em;
+  font-weight: 600;
+}
 
 // *** Card ***
+
+.card {
+  display: flex;
+
+}
 .fa-circle {
   color: white;
 }
@@ -101,4 +117,17 @@ body {
       background: #CACACA;
     }
   }
+}
+
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
 }

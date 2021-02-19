@@ -22,7 +22,7 @@ body {
   color: #4686ee;
 }
 
-.fal {
+.icon {
   margin: 0 10px;
 }
 
@@ -56,12 +56,23 @@ body {
 
 .title {
   font-family: "Brygada 1918", serif;
-  font-size: 1.2em;
+  font-size: 1.6em;
+  font-weight: 700;
 }
 
 .logo {
   width: 60px;
   margin-left: 10px;
+}
+
+.content-title {
+  margin: 20px;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.card {
+  display: flex;
 }
 
 .fa-circle {
