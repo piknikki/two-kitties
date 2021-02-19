@@ -15,20 +15,25 @@
     <title>TwoKitties</title>
   </head>
   <body>
-    <header>
+<!--    <header>-->
       <div class="container">
-        <div class="login">
+        <section class="login">
           <span><i class="fal fa-cat-space fa-2x"></i> </span>
           <span>Admin Username Login</span>
           <span><i class="fas fa-play 2x fa-rotate-90"></i></span>
-        </div>
-        <nav>
+        </section>
+        <nav class="nav">
           <section class="nav-left">
-            <section class="nav-left__item">Shares</section>
-            <section class="nav-left__item">Playlists</section>
-            <section class="nav-left__item">Personal Videos</section>
+            <span class="nav-left__item"><i class="fal fa-share-alt fa-lg"></i> Shares</span>
+            <span class="nav-left__item"><i class="fal fa-list fa-lg"></i> Playlists</span>
+            <span class="nav-left__item"><i class="fal fa-paw fa-lg"></i> Personal Videos</span>
           </section>
-          <section class="nav-right">TwoKitties! <span>Logo image</span></section>
+          <section class="nav-right">
+            <span class="title">TwoKitties!</span>
+            <span>
+              <img class="logo" src="images/twokittieslogo.png" alt="two kitties logo">
+            </span>
+          </section>
         </nav>
 
 
@@ -36,7 +41,13 @@
           <h1>shares</h1>
           <article class="card">
             <section class="card-header">
-              <div class="card-header__item--arrow">arrow inside circle</div>
+              <div class="card-header__item--arrow">
+                <span class="fa-stack fa-2x">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-reply fa-stack-1x fa-inverse fa-flip-horizontal"></i>
+                </span>
+
+              </div>
               <figure class="card-header__item--image">
                 <img src="">
               </figure>
@@ -54,68 +65,9 @@
             </section>
           </article>
 
-          <article class="card">
-            <section class="card-header">
-              <div>arrow inside circle</div>
-              <figure>
-                <img>
-              </figure>
-              <div>views</div>
-              <div>number</div>
-            </section>
-            <section class="card-body">
-              <section class="card-body__item--name">Recipient's Namehere</section>
-              <section class="card-body__item--date">Date</section>
-              <section class="card-body__item--link">link block</section>
-              <section class="card-body__item--playlist">PLAYLIST</section>
-              <section class="card-body__item--playlist-name">Name of Playlist</section>
-              <section class="card-body__item--attachments">ATTACHMENTS</section>
-              <section class="card-body__item--attach-number">04</section>
-            </section>
-          </article>
-
-          <article class="card">
-            <section class="card-header">
-              <div>arrow inside circle</div>
-              <figure>
-                <img>
-              </figure>
-              <div>views</div>
-              <div>number</div>
-            </section>
-            <section class="card-body">
-              <section class="card-body__item--name">Recipient's Namehere</section>
-              <section class="card-body__item--date">Date</section>
-              <section class="card-body__item--link">link block</section>
-              <section class="card-body__item--playlist">PLAYLIST</section>
-              <section class="card-body__item--playlist-name">Name of Playlist</section>
-              <section class="card-body__item--attachments">ATTACHMENTS</section>
-              <section class="card-body__item--attach-number">04</section>
-            </section>
-          </article>
-
-          <article class="card">
-            <section class="card-header">
-              <div>arrow inside circle</div>
-              <figure>
-                <img>
-              </figure>
-              <div>views</div>
-              <div>number</div>
-            </section>
-            <section class="card-body">
-              <section class="card-body__item--name">Recipient's Namehere</section>
-              <section class="card-body__item--date">Date</section>
-              <section class="card-body__item--link">link block</section>
-              <section class="card-body__item--playlist">PLAYLIST</section>
-              <section class="card-body__item--playlist-name">Name of Playlist</section>
-              <section class="card-body__item--attachments">ATTACHMENTS</section>
-              <section class="card-body__item--attach-number">04</section>
-            </section>
-          </article>
 
         </main>
       </div>
-    </header>
+<!--    </header>-->
   </body>
 </html>
