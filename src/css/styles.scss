@@ -76,7 +76,7 @@ body {
 
 // *** Main ***
 main {
-
+margin: 20px;
 }
 
 .content-title {
@@ -88,8 +88,71 @@ main {
 // *** Card ***
 
 .card {
+  width: 260px;
+  height: 375px;
   display: flex;
+  flex-flow: column nowrap;
+  box-shadow: 0 0 10px grey;
 
+}
+
+.card-header {
+  background-image: url("../images/cat1.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &__item {
+
+    &--image {
+
+    }
+
+    &--overlay {
+      background: black;
+      width: 260px;
+      height: 155px;
+      opacity: 0.3;
+    }
+
+    &--arrow-overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 260px;
+      height: 155px;
+      color: white;
+      display: flex;
+      padding-top: 10px;
+      justify-content: space-between;
+    }
+  }
+}
+
+.overlay {
+  &__item {
+    &--para {
+      display: flex;
+      flex-direction: column;
+      padding-right: 10px;
+    }
+
+    &--para-top {
+      font-size: 0.8em;
+      text-align: center;
+    }
+
+    &--para-bottom {
+      font-size: 2.2em;
+      text-align: center;
+    }
+  }
+}
+
+
+.image {
+  width: 260px;
 }
 .fa-circle {
   color: white;
@@ -100,11 +163,13 @@ main {
 }
 
 .card-body {
+  padding: 10px;
 
   &__item {
 
     &--name {
       font-size: 1em;
+      padding: 5px;
     }
 
     &--date {
@@ -115,6 +180,9 @@ main {
     &--link {
       margin: 10px;
       background: #CACACA;
+      font-size: 0.8em;
+      padding: 5px;
+      text-wrap: normal;
     }
   }
 }

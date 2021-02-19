@@ -65,6 +65,10 @@ body {
   margin-left: 10px;
 }
 
+main {
+  margin: 20px;
+}
+
 .content-title {
   margin: 20px;
   font-size: 1.4em;
@@ -72,7 +76,54 @@ body {
 }
 
 .card {
+  width: 260px;
+  height: 375px;
   display: flex;
+  flex-flow: column nowrap;
+  box-shadow: 0 0 10px grey;
+}
+
+.card-header {
+  background-image: url("../images/cat1.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.card-header__item--overlay {
+  background: black;
+  width: 260px;
+  height: 155px;
+  opacity: 0.3;
+}
+.card-header__item--arrow-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 260px;
+  height: 155px;
+  color: white;
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+
+.overlay__item--para {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+.overlay__item--para-top {
+  font-size: 0.8em;
+  text-align: center;
+}
+.overlay__item--para-bottom {
+  font-size: 2.2em;
+  text-align: center;
+}
+
+.image {
+  width: 260px;
 }
 
 .fa-circle {
@@ -83,8 +134,12 @@ body {
   color: #2B2B2B;
 }
 
+.card-body {
+  padding: 10px;
+}
 .card-body__item--name {
   font-size: 1em;
+  padding: 5px;
 }
 .card-body__item--date {
   font-size: 0.8em;
@@ -93,6 +148,9 @@ body {
 .card-body__item--link {
   margin: 10px;
   background: #CACACA;
+  font-size: 0.8em;
+  padding: 5px;
+  text-wrap: normal;
 }
 
 /*# sourceMappingURL=styles.css.map */
