@@ -13,7 +13,8 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 // *** Top Row ***
