@@ -9,7 +9,7 @@ and hopefully fairly accessible.
 
 ## Screen shots
   - ![TwoKitties](src/images/desktop.png)
-  - ![TwoKitties](src/images/mobile.png)
+  - ![TwoKitties](src/images/mobilescreenshot.png)
 
 
 ### See more of my work here
