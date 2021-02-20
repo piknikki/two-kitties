@@ -7,20 +7,50 @@ $link-color: #4686ee;
 body {
   background: #EFEFEF;
   font-family: $font-other;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .container {
   margin: 0 auto;
+  width: 100%;
 }
 
 // *** Top Row ***
+
+
 .login {
   background: $secondary-color;
   color: white;
   font-weight: 400;
   height: 50px;
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.top-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  padding-left: 10px;
+
+  &__title {
+    padding-left: 5px;
+  }
+
+  &__logo,
+  &__title {
+    display: none;
+  }
+
+}
+
+.top-right {
   text-align: right;
-  padding: 20px 50px 10px;
+  padding-right: 50px;
 }
 
 .fa-play,
@@ -295,6 +325,20 @@ main {
     }
   }
 
+  .nav-right {
+    &__logo,
+    &__title {
+      display: none;
+    }
+  }
+
+  .top-left {
+    &__logo,
+    &__title {
+      display: inline;
+    }
+  }
+
   .content-title {
     &__icon {
       display: inline;
@@ -307,9 +351,7 @@ main {
 }
 
 @media screen and (max-width: 400px) {
-  .title {
-    display: none;
-  }
+
 }
 
 @media screen and (max-width: 300px) {
@@ -320,3 +362,6 @@ main {
   }
 }
 
+.hidden {
+  display: none;
+}

@@ -1,10 +1,13 @@
 body {
   background: #EFEFEF;
   font-family: "Montserrat", sans-serif;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .container {
   margin: 0 auto;
+  width: 100%;
 }
 
 .login {
@@ -12,8 +15,29 @@ body {
   color: white;
   font-weight: 400;
   height: 50px;
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.top-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  padding-left: 10px;
+}
+.top-left__title {
+  padding-left: 5px;
+}
+.top-left__logo, .top-left__title {
+  display: none;
+}
+
+.top-right {
   text-align: right;
-  padding: 20px 50px 10px;
+  padding-right: 50px;
 }
 
 .fa-play,
@@ -243,15 +267,18 @@ main {
     display: none;
   }
 
+  .nav-right__logo, .nav-right__title {
+    display: none;
+  }
+
+  .top-left__logo, .top-left__title {
+    display: inline;
+  }
+
   .content-title__icon {
     display: inline;
   }
   .content-title__text {
-    display: none;
-  }
-}
-@media screen and (max-width: 400px) {
-  .title {
     display: none;
   }
 }
@@ -261,6 +288,9 @@ body,
 .container {
     width: 100%;
   }
+}
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
